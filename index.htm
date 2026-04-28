@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="src/output.css" rel="stylesheet" />
+  <title>Tropiko</title>
+  <style>
+    .swiper-button-next, .swiper-button-prev{
+        color: brown;
+        margin: 30px !important;
+    }
+  </style>
+</head>
+<body>
+    <header class="bg-[#f7f7f7]">
+
+        <!--Header Desktop-->
+        <div class="container mx-auto hidden lg:flex justify-between items-center py-5 xl:px-0 px-10 max-w-6xl">
+            <div class="flex items-center gap-2">
+                <img class="w-12" src="img/logo.png" alt="logo" />
+                <h3 class="font-bold text-xl">TROPIKO</h3>
+            </div>
+            <div class="flex items-center gap-10">
+                <ul class="flex items-center gap-10 text-[#343434] text-[17px]">
+                    <li class="cursor-pointer"><a onclick="loadPage('home')" href="#home">Home</a></li>
+                    <li class="cursor-pointer"><a onclick="loadPage('fruits')" href="#fruits">Fruits</a></li>
+                    <li class="cursor-pointer"><a onclick="loadPage('services')" href="#services">Services</a></li>
+                    <li class="cursor-pointer"><a onclick="loadPage('contact')" href="#contact">Contact us</a></li>
+                </ul>
+                <div class="flex items-center gap-10">
+                    <i class="fa-solid fa-magnifying-glass text-[#000101] text-[18px]"></i>
+                    <button class="border-0 text-white text-[14px] py-1 px-3 bg-[#fc5d35]">GET A QUOTE</button>
+                </div>
+            </div>
+        </div>
+        <!--Header Desktop-->
+
+        <!--Header Mobil-->
+        <div class="container mx-auto flex lg:hidden justify-between items-center py-5 px-10">
+            <div class="flex items-center gap-2">
+                <img class="w-12" src="img/logo.png" alt="logo" />
+                <h3 class="font-bold text-xl">TROPIKO</h3>
+            </div>
+            <i class="fa-solid fa-bars text-2xl font-bold"></i>
+        </div>
+        <!--Header Mobil-->
+
+    </header>
+    <main>
+        <div id="content"></div>
+    </main>
+    <footer>
+        <div class="container mx-auto flex justify-between flex-col lg:flex-row gap-20 py-20 xl:px-0 px-10 max-w-6xl">
+            <div class="flex flex-col gap-3">
+                <h3 class="text-2xl font-semibold">Fruits</h3>
+                <ul class="text-[18px]">
+                    <li>randomised</li>
+                    <li>words which</li>
+                    <li>don't look even</li>
+                    <li>slightly</li>
+                    <li>believable. If you</li>
+                    <li>are going to use</li>
+                    <li>a passage of</li>
+                    <li>Lorem Ipsum,</li>
+                </ul>
+            </div>
+            <div class="flex flex-col gap-3">
+                <h3 class="text-2xl font-semibold">Services</h3>
+                <ul class="text-[18px]">
+                    <li>randomised</li>
+                    <li>words which</li>
+                    <li>don't look even</li>
+                    <li>slightly</li>
+                    <li>believable. If you</li>
+                    <li>are going to use</li>
+                    <li>a passage of</li>
+                    <li>Lorem Ipsum,</li>
+                </ul>
+            </div>
+            <div class="flex flex-col gap-3">
+                <h3 class="text-2xl font-semibold">List</h3>
+                <ul class="text-[18px]">
+                    <li>randomised</li>
+                    <li>words which</li>
+                    <li>don't look even</li>
+                    <li>slightly</li>
+                    <li>believable. If you</li>
+                    <li>are going to use</li>
+                    <li>a passage of</li>
+                    <li>Lorem Ipsum,</li>
+                </ul>
+                </div>
+            <div class="flex flex-col gap-3">
+                <h3 class="text-2xl font-semibold">Follow Us</h3>
+                <div class="flex items-center gap-2">
+                    <span class="border bg-black text-white w-10 h-10 rounded-[50%] flex justify-center items-center"><i class="fa-brands fa-facebook-f"></i></span>
+                    <span class="border bg-black text-white w-10 h-10 rounded-[50%] flex justify-center items-center"><i class="fa-brands fa-twitter"></i></span>
+                    <span class="border bg-black text-white w-10 h-10 rounded-[50%] flex justify-center items-center"><i class="fa-brands fa-linkedin-in"></i></span>
+                    <span class="border bg-black text-white w-10 h-10 rounded-[50%] flex justify-center items-center"><i class="fa-brands fa-instagram"></i></span>
+                </div>
+                <h3 class="text-2xl font-semibold">Subscribe Now</h3>
+                <input class="border" type="text" />
+                <button class="border bg-[#fc5d35] text-white w-32 p-1">Subscribe</button>
+            </div>
+        </div>
+        <div class="bg-[#efeded] text-center text-[#191818] py-5 xl:px-0 px-10">
+            <p>Copyright © 2019 All Rights Reserved By Free Html Templates</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+    <script>
+        const content = document.getElementById('content')
+        const footer = document.querySelector('footer')
+        const ajax = new XMLHttpRequest()
+
+        loadPage(window.location.hash.slice(1) || 'home')
+
+        function loadPage(page) {
+            let file = `content/${page}.htm`
+            ajax.open('GET', file)
+            ajax.send()
+            ajax.onload = function () {
+                if (this.status === 404) loadPage('error')
+                else content.innerHTML = this.response
+            }
+        }
+    </script>
+</body>
+</html>
