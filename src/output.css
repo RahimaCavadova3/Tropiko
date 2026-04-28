@@ -601,6 +601,9 @@
   .text-center {
     text-align: center;
   }
+  .text-left {
+    text-align: left;
+  }
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
@@ -737,6 +740,11 @@
       width: calc(var(--spacing) * 32);
     }
   }
+  .lg\:w-40 {
+    @media (width >= 64rem) {
+      width: calc(var(--spacing) * 40);
+    }
+  }
   .lg\:w-50 {
     @media (width >= 64rem) {
       width: calc(var(--spacing) * 50);
@@ -810,6 +818,11 @@
   .lg\:gap-30 {
     @media (width >= 64rem) {
       gap: calc(var(--spacing) * 30);
+    }
+  }
+  .lg\:py-45 {
+    @media (width >= 64rem) {
+      padding-block: calc(var(--spacing) * 45);
     }
   }
   .lg\:text-left {

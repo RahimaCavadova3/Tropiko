@@ -54,7 +54,7 @@
     </main>
     <footer>
         <div class="container mx-auto flex justify-between flex-col lg:flex-row gap-20 py-20 xl:px-0 px-10 max-w-6xl">
-            <div class="flex flex-col gap-3">
+            <div class="flex flex-col items-center lg:items-start text-center lg:text-left gap-3">
                 <h3 class="text-2xl font-semibold">Fruits</h3>
                 <ul class="text-[18px]">
                     <li>randomised</li>
@@ -67,7 +67,7 @@
                     <li>Lorem Ipsum,</li>
                 </ul>
             </div>
-            <div class="flex flex-col gap-3">
+            <div class="flex flex-col items-center lg:items-start text-center lg:text-left gap-3">
                 <h3 class="text-2xl font-semibold">Services</h3>
                 <ul class="text-[18px]">
                     <li>randomised</li>
@@ -80,7 +80,7 @@
                     <li>Lorem Ipsum,</li>
                 </ul>
             </div>
-            <div class="flex flex-col gap-3">
+            <div class="flex flex-col items-center lg:items-start text-center lg:text-left gap-3">
                 <h3 class="text-2xl font-semibold">List</h3>
                 <ul class="text-[18px]">
                     <li>randomised</li>
@@ -93,7 +93,7 @@
                     <li>Lorem Ipsum,</li>
                 </ul>
                 </div>
-            <div class="flex flex-col gap-3">
+            <div class="flex flex-col items-center lg:items-start text-center lg:text-left gap-3">
                 <h3 class="text-2xl font-semibold">Follow Us</h3>
                 <div class="flex items-center gap-2">
                     <span class="border bg-black text-white w-10 h-10 rounded-[50%] flex justify-center items-center"><i class="fa-brands fa-facebook-f"></i></span>
@@ -102,7 +102,7 @@
                     <span class="border bg-black text-white w-10 h-10 rounded-[50%] flex justify-center items-center"><i class="fa-brands fa-instagram"></i></span>
                 </div>
                 <h3 class="text-2xl font-semibold">Subscribe Now</h3>
-                <input class="border" type="text" />
+                <input class="border w-40 p-1" type="text" />
                 <button class="border bg-[#fc5d35] text-white w-32 p-1">Subscribe</button>
             </div>
         </div>
@@ -111,21 +111,7 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            spaceBetween: 30,
-            centeredSlides: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
-    </script>
+
     <script>
         const content = document.getElementById('content')
         const footer = document.querySelector('footer')
@@ -142,6 +128,21 @@
                 else content.innerHTML = this.response
             }
         }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
     </script>
 </body>
 </html>
